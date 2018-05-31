@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Container, Row, Col } from 'reactstrap';
 import Navigation from './components/Navigation';
+import Sidebar from './components/Sidebar';
 
 
 class App extends Component {
@@ -8,9 +10,16 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <div className="container">
-          <h1>Front Page</h1>
-        </div>
+        <Container>
+          <Row>
+            <Col xs={2}>
+              <Sidebar />
+            </Col>
+            <Col xs={10}>
+              <h1>Front page</h1>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
