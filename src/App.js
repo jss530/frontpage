@@ -11,12 +11,12 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <Container className="body">
+        <Container>
           <Row>
-            <Col xs="2">
+            <Col xs="3">
               <Sidebar />
             </Col>
-            <Col xs="auto">
+            <Col xs="9">
               <Main />
             </Col>
           </Row>
