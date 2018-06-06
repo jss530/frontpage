@@ -14,7 +14,7 @@ class App extends Component {
         <Container>
           <Row>
             <Col> <Sidebar /> </Col>
-            <Col sm="12" md="8"> <Main /> </Col> /*specify that I want Main to take up screen for smaller screens */
+            <Col sm="12" md="8"> <Main /> </Col>
           </Row>
         </Container>
       </div>
