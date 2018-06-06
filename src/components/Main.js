@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Media } from 'reactstrap';
+import profile from '../details/img/main.jpg';
 import './Main.css';
 
 
@@ -7,14 +9,9 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <Container>
-          <Row>
-            <Col className="hero-image">
-              <h1 className="hero-text">Drinking buddies<br/>
-              Because drinking together is just more fun.</h1>
-            </Col>
-          </Row>
-        </Container>
+        <Media>
+          <Media object src={ profile } alt="Main image" />
+        </Media>
       </div>
     );
   };
