@@ -10,7 +10,7 @@ class Main extends React.Component {
     return (
       <div>
         <Media>
-          <Media object src={ profile } alt="Main image" />
+          <Media object src={ profile } alt="Main image" className="image"/>
         </Media>
       </div>
     );
