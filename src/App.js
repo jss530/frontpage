@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <Grid>
+        <Grid fluid={true}>
           <Row>
             <Col xs={6} md={3}> <Sidebar /> </Col>
             <Col xs={12} md={9}> <Main /> </Col>
