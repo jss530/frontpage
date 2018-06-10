@@ -4,7 +4,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
-import {Container, Row, Col} from 'reactstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 
 class App extends Component {
@@ -13,23 +13,16 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <Container>
+        <Grid>
           <Row>
-            <Col> <Sidebar /> </Col>
-            <Col sm={{ size: 12, fluid: true }} md={{ size: 8, fluid: true }}> <Main /> </Col>
+            <Col xs={6} md={3}> <Sidebar /> </Col>
+            <Col xs={12} md={9}> <Main /> </Col>
           </Row>
-        </Container>
+        </Grid>
       </div>
     );
   }
 }
 
-Container.propTypes = {
-  fluid:  PropTypes.bool
-}
-
-Row.propTypes = {
-  noGutters: PropTypes.bool
-}
 
 export default App;
