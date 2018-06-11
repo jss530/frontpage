@@ -12,9 +12,9 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <Grid fluid={true}>
+        <Grid fluid={true} responsive={true}>
           <Row>
-            <Col xs={6} md={3}> <Sidebar /> </Col>
+            <Col xsHidden={true} md={3}> <Sidebar /> </Col>
             <Col xs={12} md={9}> <Main /> </Col>
           </Row>
         </Grid>
