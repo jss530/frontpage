@@ -10,11 +10,11 @@ class Main extends React.Component {
       <Grid fluid={true}>
         <Row>
           <Image src={ profile } alt="Main image" className="image" rounded={true} responsive={true}/>
+          <h1 className="centered-text">Drinking Buddies</h1>
           <Jumbotron>
-            <h1>Hello, world!</h1>
+            <h1>Welcome to Drinking Buddies!</h1>
             <p>
-              This is a simple hero unit, a simple jumbotron-style component for calling
-              extra attention to featured content or information.
+              Drinking buddies connects wine lovers to discuss wine, share notes, and create local events.
             </p>
           </Jumbotron>
         </Row>
