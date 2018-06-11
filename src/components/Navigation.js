@@ -4,7 +4,7 @@ import { Navbar, Nav, MenuItem, NavItem, NavDropdown, FormGroup, FormControl, Bu
 class Navigation extends React.Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect>
+      <Navbar inverse collapseOnSelect fluid={true}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#brand">Welcome!</a>
