@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import sparkling from '../details/img/sparkling.jpg';
-import redWine from '../details/img/Wine-1.jpg';
+import redWine from '../details/img/reds.jpg';
 import tours from '../details/img/Wine-tour.jpg';
 import './Sidebar.css';
 
@@ -15,7 +15,7 @@ class Sidebar extends React.Component {
             <img width={900} height={500} alt="red-wines" src={ redWine } />
             <Carousel.Caption>
               <h3>New reds!</h3>
-              <p className="dark-font">Go to the red wine category to see what's new!</p>
+              <p>Go to the red wine category to see what's new!</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
