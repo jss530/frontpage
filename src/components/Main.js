@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Jumbotron, Button } from 'react-bootstrap';
 import profile from '../details/img/main.jpg';
-import './Main.css';
 import Events from './Events.js';
+import Signup from './Signup.js';
+import './Main.css';
 
 
 class Main extends React.Component {
@@ -19,6 +20,15 @@ class Main extends React.Component {
             </p>
           </Jumbotron>
           <Events/>
+          <br/>
+          <Jumbotron id="tasting">
+            <h1>Tasting notes</h1>
+            <p>
+              Need help choosing a wine? Want to add to our collection of tasting notes? Click here.
+            </p>
+          </Jumbotron>
+          <br/>
+          <Signup/>
         </Row>
       </Grid>
     );
