@@ -1,34 +1,45 @@
 import React from 'react';
-import { Grid, Row, Col, Form, FormGroup, FormControl, Button, ControlLabel } from 'react-bootstrap';
+import { Grid, Row, Col, Form, FormGroup, FormControl, Button, ControlLabel, FieldGroup, Checkbox } from 'react-bootstrap';
 
 class Signup extends React.Component {
   render() {
     return (
-      <Form horizontal>
-        <FormGroup controlId="formHorizontalEmail">
-          <Col componentClass={ControlLabel} sm={2}>
-            Email
-          </Col>
-          <Col sm={10}>
-            <FormControl type="email" placeholder="Email" />
-          </Col>
-        </FormGroup>
+      <Grid>
+        <Row>
+          <Col xs={9}>
+            <h3>Join our mailing list!</h3>
+            <Form horizontal>
+              <FormGroup controlId="formHorizontalEmail">
+                <Col componentClass={ControlLabel} sm={2}>
+                  Your name
+                </Col>
+                <Col sm={10}>
+                  <FormControl type="email" placeholder="What should we call you?" />
+                </Col>
+              </FormGroup>
 
-        <FormGroup controlId="formHorizontalPassword">
-          <Col componentClass={ControlLabel} sm={2}>
-            Password
-          </Col>
-          <Col sm={10}>
-            <FormControl type="password" placeholder="Password" />
-          </Col>
-        </FormGroup>
+              <FormGroup controlId="formHorizontalEmail">
+                <Col componentClass={ControlLabel} sm={2}>
+                  Email
+                </Col>
+                <Col sm={10}>
+                  <FormControl type="email" placeholder="How can we reach you?" />
+                </Col>
+              </FormGroup>
 
-        <FormGroup>
-          <Col smOffset={2} sm={10}>
-            <Button type="submit">Sign me up</Button>
+              <Checkbox checked readOnly>
+                Send me emails about wine specials as well.
+              </Checkbox>
+              <br/>
+              <FormGroup>
+                <Col smOffset={2} sm={10}>
+                  <Button type="submit">Sign me up</Button>
+                </Col>
+              </FormGroup>
+            </Form>
           </Col>
-        </FormGroup>
-      </Form>
+        </Row>
+      </Grid>
     );
   };
 };
