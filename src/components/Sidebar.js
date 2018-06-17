@@ -4,6 +4,7 @@ import sparkling from '../details/img/sparkling.jpg';
 import redWine from '../details/img/reds.jpg';
 import tours from '../details/img/Wine-tour.jpg';
 import './Sidebar.css';
+import Winelist from './Winelist';
 
 class Sidebar extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class Sidebar extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <Winelist/>
       </div>
     );
   };
