@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Row, Col, Image, Jumbotron, Button } from 'react-bootstrap';
 import profile from '../details/img/main.jpg';
 import './Main.css';
+import Events from './Events.js';
 
 
 class Main extends React.Component {
@@ -17,6 +18,7 @@ class Main extends React.Component {
               Drinking buddies connects wine lovers to discuss wine, create local events, and purchase favorites.
             </p>
           </Jumbotron>
+          <Events/>
         </Row>
       </Grid>
     );

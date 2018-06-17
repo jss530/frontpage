@@ -55,8 +55,8 @@ class Winelist extends React.Component {
           </Col>
         </Row>
       </Grid>
-    )
-  }
+    );
+  };
 };
 
 export default Winelist;
