@@ -9,7 +9,7 @@ class Main extends React.Component {
     return (
       <Grid fluid={true}>
         <Row>
-          <Image src={ profile } alt="Main image" className="image" rounded={true} responsive={true}/>
+          <Image src={profile} alt="Main image" className="image" rounded={true} responsive={true}/>
           <h1 className="centered-text">Drinking Buddies</h1>
           <Jumbotron>
             <h1>Welcome to Drinking Buddies!</h1>
