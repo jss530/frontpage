@@ -14,7 +14,7 @@ class Main extends React.Component {
           <Jumbotron>
             <h1>Welcome to Drinking Buddies!</h1>
             <p>
-              Drinking buddies connects wine lovers to discuss wine, share notes, and create local events.
+              Drinking buddies connects wine lovers to discuss wine, create local events, and purchase favorites.
             </p>
           </Jumbotron>
         </Row>
