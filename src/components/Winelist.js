@@ -2,7 +2,7 @@ import React from 'react';
 import burgundy from '../details/img/burgundy.jpg';
 import reisling from '../details/img/reisling.jpg';
 import pinot from '../details/img/pinot.jpg';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Thumbnail, Button } from 'react-bootstrap';
 import './Winelist.css';
 
 
@@ -11,16 +11,39 @@ class Winelist extends React.Component {
     return (
       <Grid fluid={true}>
         <Row>
-          <Col xs={3}><Image src={burgundy} alt="Burgundy" className="wine-pic" rounded={true} responsive={true}/></Col>
-          <Col xs={9}> Description </Col>
+          <Col>
+            <Thumbnail src={burgundy} alt="Burgundy">
+            <h3>Ch. Canon, St.-Émilion - 2005</h3>
+            <p>Tiny in size, but packs immense flavor. Dark fruit and toasty oak notes are prominent on the nose and palate. Drink over the next ten years.</p>
+            <p>
+              <Button bsStyle="primary">Buy now</Button>
+            </p>
+            </Thumbnail>
+          </Col>
         </Row>
+        <br/>
         <Row>
-          <Col xs={3}><Image src={reisling} alt="Reisling" className="wine-pic" rounded={true} responsive={true}/></Col>
-          <Col xs={9}> Description </Col>
+          <Col>
+            <Thumbnail src={reisling} alt="Reisling">
+            <h3>Wehlener Sonnenuhr Riesling - 2014</h3>
+            <p>This vineyard is full blue slate soil that gives the wine a signature minerality that offsets the sweetness for a beautifully balanced, elegant wine.</p>
+            <p>
+              <Button bsStyle="primary">Buy now</Button>
+            </p>
+            </Thumbnail>
+          </Col>
         </Row>
+        <br/>
         <Row>
-          <Col xs={3}><Image src={pinot} alt="Pinot Noir" className="wine-pic" rounded={true} responsive={true}/></Col>
-          <Col xs={9}> Description </Col>
+          <Col>
+            <Thumbnail src={pinot} alt="Pinot noir">
+            <h3>The Pinot Project - 2016</h3>
+            <p>This younger bottle exudes excellent primary fruit aromas with lively black berried and black cherried fruits. These wines can be held for years.</p>
+            <p>
+              <Button bsStyle="primary">Buy now</Button>
+            </p>
+            </Thumbnail>
+          </Col>
         </Row>
       </Grid>
     )

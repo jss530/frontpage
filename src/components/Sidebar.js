@@ -34,6 +34,7 @@ class Sidebar extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <br/>
         <Winelist/>
       </div>
     );
